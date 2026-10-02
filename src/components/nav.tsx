@@ -150,7 +150,7 @@ export function Nav() {
                   initial={{ opacity: 0, x: -28 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.06 * i + 0.1, ease: [0.22, 1, 0.36, 1] }}
-                  className="flex items-baseline gap-4 border-b border-white/6 py-4 font-display text-3xl font-semibold text-white/80"
+                  className="flex items-baseline gap-4 border-b border-white/6 py-3.5 font-display text-2xl font-semibold text-white/80"
                 >
                   <span className="font-mono text-xs text-neon/60">
                     0{i + 1}
