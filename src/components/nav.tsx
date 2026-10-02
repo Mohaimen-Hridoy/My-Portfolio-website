@@ -69,8 +69,7 @@ export function Nav() {
               {profile.initials}
             </span>
             <span className="hidden text-white/85 transition-colors group-hover:text-white sm:block">
-              {profile.firstName}
-              <span className="text-white/40">.</span>
+              {profile.name}
             </span>
           </a>
 
