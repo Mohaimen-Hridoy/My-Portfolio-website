@@ -61,7 +61,6 @@ export function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], [0, 120])
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.94])
-  const blur = useTransform(scrollYProgress, [0, 1], ['blur(0px)', 'blur(7px)'])
 
   return (
     <section
@@ -70,7 +69,7 @@ export function Hero() {
       className="relative flex min-h-[100svh] items-center px-5 pt-28 pb-24 sm:px-8 sm:pt-32"
     >
       <motion.div
-        style={{ y, opacity, scale, filter: blur }}
+        style={{ y, opacity, scale }}
         className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10"
       >
         <div className="text-center lg:text-left">

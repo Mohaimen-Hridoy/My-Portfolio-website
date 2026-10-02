@@ -35,13 +35,15 @@ export function PhotoPanel() {
                 alt={profile.name}
                 fill
                 priority
+                quality={100}
+                unoptimized
                 sizes="(max-width: 1024px) 384px, 420px"
                 onError={() => setFailed(true)}
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
             )}
 
-            <div className="absolute inset-0 bg-gradient-to-t from-void/85 via-void/5 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-void/60 via-void/5 to-transparent" />
 
             <div className="absolute inset-x-0 bottom-0 p-6">
               <p className="font-display text-lg font-bold text-white">{profile.name}</p>
